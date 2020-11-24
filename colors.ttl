@@ -1,0 +1,35 @@
+@prefix dc: <http://dublincore.org/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix color: <http://purl.org/dcx/color/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+color: a skos:ConceptScheme ;
+    dct:title "Colors of books"@en ;
+    dc:creator "SWIB-Skohub-Workshop group"@en ;
+    dct:created "2020-11-24"^^xsd:date ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    skos:hasTopConcept color:blue, color:red, color:orange, color:green .
+
+color:blue a skos:Concept ;
+    skos:prefLabel "blue"@en, "blau"@de, "zils"@lv ;
+    skos:topConceptOf color: .
+
+color:red a skos:Concept ;
+    skos:prefLabel "red"@en, "rojo"@es, "rot"@de, "sarkans"@lv ;
+    skos:topConceptOf color: .
+
+color:orange a skos:Concept ;
+    skos:prefLabel "orange"@en, "oranžs"@lv ;
+    skos:topConceptOf color: .
+    
+color:green a skos:Concept ;
+    skos:prefLabel "green"@en , "緑色"@ja ;
+    skos:topConceptOf color: .
+    
+
